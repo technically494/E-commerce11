@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    box-shadow:0 1px 3px -2px black;
+    height:150px;
+
+    
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.nav-logo p{
+    color: #383838;
+    font-size: 46px;
+    font-weight: 700;
+    
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    color: #626262;
+    font-size:30px;
+    font-weight: 500px;
+    list-style: none;
+    position: relative;
+    top: 50px;
+}
+.nav-menu-li{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border:none;
+    width:80%;
+    height:3px;
+    border-radius:10px;
+    background:blue;
+}
+.nav-logo-cart{
+    display: flex;
+    align-items:center;
+    gap: 45px;
+    position: relative;
+    top:40px;
+    
+}
+.nav-login-cart button{
+    width:157px;
+    height:58px;
+    outline:none;
+    border:1px solid #7a7a7a;
+    border-radius:75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+    position:relative;
+    top:1px;
+}
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+
+.nav-cart-count{
+    position:absolute;
+    right:100px;
+    top:40px;
+    width:20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 14px;
+    background:red;
+    color:white;
+
+
+
+}
+
+
+/* SEJAL */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* items stack ho jaye */
+    align-items: center;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column; /* links vertically stack */
+    gap: 10px;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 1.5rem; /* logo chhota ho jaye */
+    margin-bottom: 10px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+  .nav-links li {
+    font-size: 14px; /* font chhota kare */
+  }
+}
