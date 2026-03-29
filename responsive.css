@@ -1,0 +1,76 @@
+/* ===== GLOBAL RESPONSIVE ===== */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== CONTAINER FIX ===== */
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+/* ===== PRODUCT GRID ===== */
+.products,
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 992px) {
+  .products,
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+  .products,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Navbar stack */
+  .navbar,
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Buttons full width */
+  button {
+    width: 100%;
+  }
+
+  /* Text center */
+  h1, h2, h3, p {
+    text-align: center;
+  }
+}
+
+/* ===== FLEX FIX ===== */
+.flex,
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ===== CARD FIX ===== */
+.card,
+.product-card {
+  width: 100%;
+}
+
+/* ===== SIDEBAR FIX (if any) ===== */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
