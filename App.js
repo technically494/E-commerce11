@@ -10,6 +10,7 @@ import Cart from './Pages/Cart';
 import men_banner from './assets/men_banner.jpg'
 import women_banner from './assets/women_banner.avif'
 import kids_banner from './assets/kids_banner.avif'
+import "./responsive.css";
 
 function App() {
   return (
